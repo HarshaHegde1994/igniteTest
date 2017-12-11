@@ -1,0 +1,31 @@
+{
+  "domainName"              : "www.serverexample.com",
+  "appPort"                 : 3000,
+  "databaseSetting"         : {
+    "user"                  : "",
+    "pass"                  : "",
+    "host"                  : "127.0.0.1",
+    "port"                  : 27017,
+    "database"              : "login",
+    "db"                    : {
+      "native_parser"         : true
+    },
+    "server"                : {
+      "poolSize"              : 5
+    }
+  },
+  "serviceTo"               : "serverexample",
+  "setLang"                 : "EN",
+  "logToStdOut"             : true,
+  "logServerConfig"    : {
+    "hostname"                : "127.0.0.1",
+    "port"                    : "7173",
+    "path"                    : "/logserver/log/add",
+    "method"                  : "POST",
+    "headers"                 : {
+      "Content-Type"            : "application/json",
+      "x-service-from"          : "localhost",
+      "x-auth-server"           : true
+    }
+  }
+}
